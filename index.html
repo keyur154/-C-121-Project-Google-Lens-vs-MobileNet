@@ -1,0 +1,170 @@
+<html>
+  <head>
+    <title>MobileNet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <center>
+      <h3 id="heading">Case Study between Google Lens and MobileNet</h3>
+      <br>
+      <span class="heading_span">
+        <h4>Google Lens</h4>
+        <img style="height: 70; width: 70; border: none;" src="220px-Google_Lens_-_new_logo.png">
+      </span>
+      <br>
+      <br>
+      <h4 style="color: green; font-weight: bold; font-size: 25px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">VS</h4>
+      <br>
+      <h3 class="btn btn-danger" style="font-size: 25px;">MobileNet</h3>
+      <hr>
+
+      <ol>
+        <div class="text_images_and_result">
+          <li>
+            <b style="color: blue;">Test Image - </b>
+            <img src="stylish-golden-watch-white-surface.jpg" class="img-responsive" style="height: 250px; width: 250px;">
+          </li>
+
+          <h5>Output on <b style="color: rgb(182, 0, 127);">Google Lens</b> -
+             <span class="final_result">Watch</span>
+          </h5>
+
+          <h5>Output on <b style="color: rgb(182, 0, 127);">Mobilenet Model</b> -
+            <span class="final_result2">Wall Clock</span>
+         </h5>
+
+         <div class="mini_result">
+            <h4>Result - </h4>
+            <hr>
+            <h4><b>Google Lens Is More Accurate</b></h4>
+         </div>
+
+        </div>
+      </ol>
+
+      <br>
+
+      <ol>
+        <div class="text_images_and_result">
+          <li>
+            <b style="color: blue;">Test Image - </b>
+            <img src="blank-black-metal-sport-bottle-mock-up.jpg" class="img-responsive" style="height: 250px; width: 250px;">
+          </li>
+
+          <h5>Output on <b style="color: rgb(182, 0, 127);">Google Lens</b> -
+             <span class="final_result">Water Bottle</span>
+          </h5>
+
+          <h5>Output on <b style="color: rgb(182, 0, 127);">Mobilenet Model</b> -
+            <span class="final_result2">Spotlight</span>
+         </h5>
+
+         <div class="mini_result">
+            <h4>Result - </h4>
+            <hr>
+            <h4><b>Google Lens Is More Accurate</b></h4>
+         </div>
+
+        </div>
+      </ol>
+      
+      <br>
+
+      <ol>
+        <div class="text_images_and_result">
+          <li>
+            <b style="color: blue;">Test Image - </b>
+            <img src="58592504.webp" class="img-responsive" style="width: 250px; height: 250px;">
+          </li>
+
+          <h5>Output on <b style="color: rgb(182, 0, 127);">Google Lens</b> -
+             <span class="final_result">Spoon</span>
+          </h5>
+
+          <h5>Output on <b style="color: rgb(182, 0, 127);">Mobilenet Model</b> -
+            <span class="final_result2">Shovel</span>
+         </h5>
+
+         <div class="mini_result">
+            <h4>Result - </h4>
+            <hr>
+            <h4><b>Google Lens Is More Accurate</b></h4>
+         </div>
+
+        </div>
+      </ol> 
+      
+      <br>
+
+      <ol>
+        <div class="text_images_and_result">
+          <li>
+            <b style="color: blue;">Test Image - </b>
+            <img src="3d-rendering-rubic-cube.jpg" class="img-responsive">
+          </li>
+
+          <h5>Output on <b style="color: rgb(182, 0, 127);">Google Lens</b> -
+             <span class="final_result">Rubik's Cube</span>
+          </h5>
+
+          <h5>Output on <b style="color: rgb(182, 0, 127);">Mobilenet Model</b> -
+            <span class="final_result2">Digital Clock</span>
+         </h5>
+
+         <div class="mini_result">
+            <h4>Result - </h4>
+            <hr>
+            <h4><b>Google Lens Is More Accurate</b></h4>
+         </div>
+
+        </div>
+      </ol> 
+      
+      <br>
+
+      <ol>
+        <div class="text_images_and_result">
+          <li>
+            <b style="color: blue;">Test Image - </b>
+            <img src="1272.1-1.gif" class="img-responsive" style="height: 300px; width: 250px;">
+          </li>
+
+          <h5>Output on <b style="color: rgb(182, 0, 127);">Google Lens</b> -
+             <span class="final_result">Parachute Oil Bottle</span>
+          </h5>
+
+          <h5>Output on <b style="color: rgb(182, 0, 127);">Mobilenet Model</b> -
+            <span class="final_result2">Water Bottle</span>
+         </h5>
+
+         <div class="mini_result">
+            <h4>Result - </h4>
+            <hr>
+            <h4><b>Google Lens Is More Accurate</b></h4>
+         </div>
+
+        </div>
+      </ol>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div id="final_div">
+        <p>I have tested 5 images<br>
+           <b style="color: blue;">MobileNet</b> has predicted none of them correctly.
+           And <b style="color: blue;">Google Lens</b> has predicted all of them correctly.
+           <br>
+           So according to my case study <b style="color: blue;">Google Lens</b> is more Accurate
+          </p>
+      </div>  
+    </center>
+  </body>
+  </html>
